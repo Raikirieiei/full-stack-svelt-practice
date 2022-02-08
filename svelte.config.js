@@ -10,8 +10,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 
-		target: '#svelte',
-		host: "localhost",
+		// target: '#svelte',
+		// host: "localhost",
 		vite: {
 			server: {
 				hmr: {
