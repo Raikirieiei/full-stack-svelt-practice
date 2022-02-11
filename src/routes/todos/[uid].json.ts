@@ -1,8 +1,7 @@
 import type { RequestHandler } from "@sveltejs/kit";
+import { api } from "./_api";
 
-export const get = ({params, request}) =>{
-    return{
-        status: 200,
-        body: params.uid
-    }
-}
+export const del: RequestHandler = (request) => {
+    return api(request);
+  }
+  
