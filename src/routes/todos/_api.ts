@@ -7,7 +7,7 @@ export const api = (request, todo?: Todo) => {
     let body = {};
     let status = 500;
 
-    switch (request.request){
+    switch (request.request.method.toUpperCase()){
         case "GET":
 
             body = todos;
