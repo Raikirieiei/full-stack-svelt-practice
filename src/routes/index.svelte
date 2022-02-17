@@ -69,7 +69,7 @@
 
     {#each todos as todo}
         <TodoItem {todo}/>
-    {/each}
+    {/each} 
     
 
 </div>
