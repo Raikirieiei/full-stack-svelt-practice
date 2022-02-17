@@ -1,7 +1,7 @@
 import type { RequestHandler } from "@sveltejs/kit";
 import { api } from "./_api";
 
-export const del = (request) => {
+export const del: RequestHandler = async (request) => {
   return api(request);
 }
 
