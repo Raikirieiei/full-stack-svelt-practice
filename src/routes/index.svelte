@@ -87,14 +87,14 @@
     </form>
 
     {#each todos as todo}
-    <TodoItem
-      {todo}
-      processDeletedTodoResult={() => {
-        todos = todos.filter(t => t.uid !== todo.uid);
-      }}
-      {processUpdatedTodoResult}
-    />
-  {/each}
+        <TodoItem
+        {todo}
+        processDeletedTodoResult={() => {
+            todos = todos.filter(t => t.uid !== todo.uid);
+        }}
+        {processUpdatedTodoResult}
+        />
+    {/each}
     
 
 </div>

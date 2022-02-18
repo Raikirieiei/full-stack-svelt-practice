@@ -16,7 +16,7 @@ export const api = (request, data?: Record<string, unknown>) => {
             todos.push(data as Todo);
             body = data;
             status = 201;
-        case "DELETE":
+        case "DELETE":            
             todos = todos.filter(todo => todo.uid !== request.params.uid)
             status: 200;
             break;
