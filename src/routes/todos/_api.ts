@@ -39,7 +39,7 @@ export const api = async (request, data?: Record<string, unknown>) => {
                 data: {
                     done: data.done,
                     text: data.text
-                }
+                }//aa
             })
             status = 200;
             break;
