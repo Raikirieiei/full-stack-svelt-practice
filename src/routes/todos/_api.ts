@@ -21,6 +21,7 @@ export const api = async (request, data?: Record<string, unknown>) => {
                 }
             })
             status = 201;
+
             break;
         case "DELETE":
             body = await prisma.todo.delete({
@@ -43,9 +44,9 @@ export const api = async (request, data?: Record<string, unknown>) => {
             })
             status = 200;
             break;
-
+  
         default:
-            break;
+        break;
     }
     if (request.request.method.toUpperCase() !== "GET" &&
         request.request.headers.get("accept") !== "application/json") {
